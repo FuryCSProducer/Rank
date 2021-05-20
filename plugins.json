@@ -1,0 +1,59 @@
+{
+	"plugin_name": "eXPerienceChat",
+	"plugin_scope": "expchat",
+	"plugin_exec": "experience.js",
+	"command_map": {
+		"xp": {
+			"hargs": {
+				"en_US": "[@mentions]",
+				"vi_VN": "[@nhắc tên]"
+			},
+			"hdesc": {
+				"en_US": "Check your XP",
+				"vi_VN": "Kiểm tra XP của bạn"
+			},
+			"fscope": "checkxp",
+			"compatibly": 1
+		},
+		"rank": {
+			"hargs": "",
+			"hdesc": {
+				"en_US": "Check your XP rank (return images)",
+				"vi_VN": "Kiểm tra rank XP (trả về hình ảnh)"
+			},
+			"fscope": "xprank",
+			"compatibly": 1
+		}
+	},
+	"author": "UIRI (FuryCS Mod)",
+	"version": "1.3",
+	"node_depends": {
+		"text2png": "",
+		"jimp": "",
+		"fs": "",
+		"path": "",
+		"request": "",
+		"wait-for-stuff": "",
+		"stream-buffers": "",
+		"resize-img": "",
+		"canvas": "",
+		"sync-request": ""
+	},
+	"chatHook": "chathook",
+	"chatHookType": "everything",
+	"chatHookPlatform": 1,
+	"file_map": {
+		"NguyenHa.ttf": "xp_font_1",
+		"Swiss 721.ttf": "xp_font_2",
+		"text_global_rank.png": "xp_global_rank",
+		"text_group_rank.png": "xp_group_rank",
+		"blank.png": "xp_blank_canvas",
+		"gradient_bg.png": "xp_gradient",
+		"level_bg.png": "xp_level_bg",
+		"progress_bar.png": "xp_progress_bar",
+		"card_bg.png": "xp_card_bg",
+		"achievement.png": "xp_achievement",
+		"level_n_bg.png": "xp_level_n_bg"
+	},
+	"complied_for": "0.3.0"
+}
